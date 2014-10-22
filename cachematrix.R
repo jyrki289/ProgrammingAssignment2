@@ -1,18 +1,35 @@
 
 ##First I test that i can push this to github 
 
-Put comments here that give an overall description of what your
+##Put comments here that give an overall description of what your
 ## functions do
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
 
-}
+# matrix inverse can be calculated in R - solve(matrix)
+# matrix can be inverted if it has identity matrix - in R: solve(matrix)%*%(matrix)
 
 
-## Write a short comment describing this function
+#############---Function: MAKE CACHE MATRIX ---#############
 
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-}
+makeCacheMatrix <- function(mX = matrix()) 
+    {
+    mX <<- NULL              #Set To NULL, m stand for matrix
+    inverseX <<- NULL        #Set To NULL,
+    
+        set <- function(y)   #set Matrix
+        {
+            mX <<- y
+        }
+    }
+#New function below - GET MATRIX
+    get <- function() {mX}    
+         
+#New function below - GET INVERSE
+    getInverse <- function() {inverseX}
+       
+
+### to be continued.....
+
+
